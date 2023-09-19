@@ -86,3 +86,27 @@ WHERE employees.Role="Graphic Designer";
 
 #ex17
 #//done
+
+#ex18
+SELECT Name
+FROM students
+WHERE Points=(SELECT max(Points) FROM students);
+
+#ex19
+SELECT AVG(Points)
+FROM students;
+
+#ex20
+SELECT count(*)
+FROM students
+WHERE Points=500;
+
+#ex21
+SELECT Name
+FROM students
+WHERE Name LIKE '%s%';
+
+#ex22
+SELECT *
+FROM students
+ORDER BY Points DESC;
