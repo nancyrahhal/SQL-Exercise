@@ -63,3 +63,26 @@ WHERE Name="Layal";
 # ex12
 DELETE FROM students
 WHERE Name="Layal";
+
+# ex13
+#//done
+
+#ex14
+SELECT employees.Name, companies.Name, companies.Date
+FROM employees
+INNER JOIN companies ON employees.Company=companies.Name;
+
+#ex15
+SELECT employees.Name
+FROM employees
+INNER JOIN companies ON employees.Company=companies.Name
+WHERE companies.Date<2000;
+
+# ex16
+SELECT companies.Name
+FROM companies
+INNER JOIN employees ON companies.Name=employees.Company
+WHERE employees.Role="Graphic Designer";
+
+#ex17
+#//done
